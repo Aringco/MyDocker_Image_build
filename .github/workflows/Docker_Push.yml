@@ -17,13 +17,13 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       
-      - name: Build and push Docker Image
+      - name: Build and Push Docker Image
         uses: docker/build-push-action@v3.0.0
         with:
           context: .
           file: Dockerfile
           push: true
-          tags: chlzzz/myrepo:latest
+          tags: aringco/myrepo:latest
 
 # Start commit 클릭
 # Description : Docker Image Build and Push
